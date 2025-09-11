@@ -1,0 +1,40 @@
+{
+  "name": "automanews.com.br",
+  "version": "1.0.0",
+  "description": "**AutomaNews** is a collaborative content platform focused on **home automation** and **smart home technologies**.   Inspired by [TabNews](https://www.tabnews.com.br/), the project brings together **news, tutorials, reviews, and community discussions** around the world of connected homes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev"
+  },
+  "author": "joaohenriquecosta <joaohenrique_costa@icloud.com> (https://automanews.com.br)",
+  "license": "MIT",
+  "keywords": [
+    "home automation",
+    "casa inteligente",
+    "automação residencial",
+    "smart home",
+    "IoT",
+    "hub",
+    "wifi",
+    "tutorial",
+    "reviews",
+    "comunidade",
+    "zigbee",
+    "ha",
+    "home assistant"
+  ],
+  "homepage": "https://github.com/joaohenriquecosta/automanews.com.br#readme",
+  "bugs": {
+    "url": "https://github.com/joaohenriquecosta/automanews.com.br/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaohenriquecosta/automanews.com.br.git"
+  },
+  "dependencies": {
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
