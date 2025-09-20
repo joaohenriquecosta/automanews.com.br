@@ -1,5 +1,5 @@
 function Home() {
-  return <h1>AutomaNews uhuuuul</h1>;
+  return <h1>AutomaNews</h1>;
 }
 
 export default Home;
