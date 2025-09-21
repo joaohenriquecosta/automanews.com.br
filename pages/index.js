@@ -1,140 +1,6 @@
 function Home() {
   return (
     <>
-      <style>{`
-        :root {
-          --bg: #0b1020;
-          --card: #121831;
-          --muted: #a7b0c0;
-          --text: #e9ecf1;
-          --brand: #6ee7ff;
-          --brand-2: #7c3aed;
-          --ring: rgba(110, 231, 255, 0.35);
-        }
-
-        * { box-sizing: border-box; }
-        body, html, #__next, #root { height: 100%; }
-
-        .page {
-          min-height: 100vh;
-          background: radial-gradient(1200px 600px at 10% -10%, rgba(124,58,237,0.25), transparent 60%),
-                      radial-gradient(900px 500px at 100% 0%, rgba(110,231,255,0.2), transparent 55%),
-                      var(--bg);
-          color: var(--text);
-          font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-          -webkit-font-smoothing: antialiased;
-          padding-bottom: 64px;
-        }
-
-        .container { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
-
-        /* Navbar */
-        .nav { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; }
-        .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: 0.3px; }
-        .logo {
-          width: 36px; height: 36px; border-radius: 10px;
-          background: linear-gradient(135deg, var(--brand), var(--brand-2));
-          box-shadow: 0 10px 25px -10px var(--ring), inset 0 0 0 1px rgba(255,255,255,0.15);
-        }
-        .nav-actions { display: flex; gap: 12px; }
-        .link {
-          color: var(--text); text-decoration: none; opacity: 0.85;
-        }
-        .link:hover { opacity: 1; text-decoration: underline; }
-
-        .btn {
-          border: 0; padding: 10px 16px; border-radius: 10px;
-          font-weight: 600; cursor: pointer;
-          background: linear-gradient(135deg, var(--brand), var(--brand-2));
-          color: #0a0f1e;
-          box-shadow: 0 10px 25px -10px var(--ring);
-        }
-        .btn.outline {
-          background: transparent; color: var(--text);
-          border: 1px solid rgba(255,255,255,0.12);
-        }
-        .btn:active { transform: translateY(1px); }
-
-        /* Hero */
-        .hero { padding: 48px 0 24px; text-align: center; }
-        .kicker {
-          display:inline-block; font-size: 12px; letter-spacing: .12em; text-transform: uppercase;
-          color: var(--muted); background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08);
-          padding: 6px 10px; border-radius: 999px; margin-bottom: 16px;
-        }
-        .title {
-          font-size: clamp(32px, 5vw, 52px); line-height: 1.05; margin: 0 0 14px;
-          letter-spacing: -0.02em;
-        }
-        .subtitle {
-          margin: 0 auto 24px; max-width: 760px; color: var(--muted); font-size: 18px; line-height: 1.6;
-        }
-        .tabnews {
-          color: var(--brand); text-decoration: none; font-weight: 600;
-        }
-        .tabnews:hover { text-decoration: underline; }
-
-        .cta { display:flex; gap: 12px; justify-content:center; flex-wrap: wrap; margin-top: 8px; }
-
-        /* Features */
-        .section { padding: 32px 0; }
-        .grid {
-          display: grid;
-          grid-template-columns: repeat(12, 1fr);
-          gap: 16px;
-        }
-        .card {
-          grid-column: span 12;
-          background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
-          border: 1px solid rgba(255,255,255,0.08);
-          border-radius: 16px;
-          padding: 20px;
-          box-shadow: 0 12px 30px -18px rgba(0,0,0,0.6);
-        }
-        .card h3 { margin: 0 0 8px; }
-        .card p { margin: 0; color: var(--muted); line-height: 1.6; }
-
-        @media (min-width: 720px) {
-          .card { grid-column: span 6; }
-        }
-        @media (min-width: 980px) {
-          .card { grid-column: span 3; }
-        }
-
-        /* Code block */
-        pre {
-          background: #0a0f1e;
-          border: 1px solid rgba(255,255,255,0.08);
-          color: #d9e1ee;
-          padding: 16px;
-          border-radius: 14px;
-          overflow: auto;
-          line-height: 1.55;
-          box-shadow: inset 0 0 0 1px rgba(255,255,255,0.03);
-        }
-        code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 13.5px; }
-
-        /* Footer */
-        .page {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* ocupa a tela inteira */
-}
-
-.container {
-  flex: 1; /* ocupa todo espaço possível e empurra o footer */
-}
-
-.footer {
-  background: var(--card);
-  border-top: 1px solid rgba(255,255,255,0.08);
-  color: var(--muted);
-  text-align: center;
-  font-size: 14px;
-  padding: 16px;
-}
-      `}</style>
-
       <div className="page">
         <div className="container">
           {/* Navbar */}
@@ -163,11 +29,11 @@ function Home() {
           <header className="hero">
             <span className="kicker">Automação residencial & IoT</span>
             <h1 className="title">
-              Central de notícias, tutoriais e reviews para casas inteligentes
+              Notícias, tutoriais e reviews. Tudo sobre casas inteligentes
             </h1>
             <p className="subtitle">
               AutomaNews é uma plataforma colaborativa focada em automação
-              residencial e tecnologias para casas inteligentes. Inspirada no{" "}
+              residencial e tecnologias sobre casas inteligentes. Inspirada no{" "}
               <a
                 className="tabnews"
                 href="https://tabnews.com.br"
@@ -176,8 +42,7 @@ function Home() {
               >
                 TabNews
               </a>
-              , reunimos notícias, guias, análises e discussões da comunidade
-              sobre o universo das casas conectadas.
+              , reunimos notícias, guias, análises e discussões da comunidade.
             </p>
             <div className="cta">
               <button
@@ -201,29 +66,22 @@ function Home() {
               <article className="card">
                 <h3>📢 Notícias</h3>
                 <p>
-                  Últimas novidades sobre Smart Home, Matter, Zigbee, Z-Wave e
-                  mais.
+                  Novidades sobre Smart Home, Matter, Zigbee, Z-Wave e mais.
                 </p>
               </article>
               <article className="card">
                 <h3>📚 Tutoriais</h3>
-                <p>
-                  Guias para iniciantes e avançados com exemplos práticos e
-                  passo a passo.
-                </p>
+                <p>Guias com exemplos práticos e passo a passo.</p>
               </article>
               <article className="card">
                 <h3>🛠️ Reviews</h3>
                 <p>
-                  Análises e comparativos de dispositivos, hubs e assistentes de
-                  voz.
+                  Análises e comparativos de dispositivos, hubs e assistentes.
                 </p>
               </article>
               <article className="card">
                 <h3>💬 Comunidade</h3>
-                <p>
-                  Espaço aberto para compartilhar conhecimento e experiências.
-                </p>
+                <p>Espaço aberto para compartilhar experiências.</p>
               </article>
             </div>
           </section>
@@ -243,6 +101,227 @@ function Home() {
           </footer>
         </div>
       </div>
+
+      {/* CSS global, seguro no Next.js */}
+      <style jsx global>{`
+        :root {
+          --bg: #0b1020;
+          --card: #121831;
+          --muted: #a7b0c0;
+          --text: #e9ecf1;
+          --brand: #6ee7ff;
+          --brand-2: #7c3aed;
+          --ring: rgba(110, 231, 255, 0.35);
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+        html,
+        body,
+        #__next {
+          height: 100%;
+        }
+
+        .page {
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+          background: radial-gradient(
+              1200px 600px at 10% -10%,
+              rgba(124, 58, 237, 0.25),
+              transparent 60%
+            ),
+            radial-gradient(
+              900px 500px at 100% 0%,
+              rgba(110, 231, 255, 0.2),
+              transparent 55%
+            ),
+            var(--bg);
+          color: var(--text);
+          font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+            Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji",
+            "Segoe UI Emoji";
+          -webkit-font-smoothing: antialiased;
+          padding-bottom: 64px;
+        }
+
+        .container {
+          max-width: 1040px;
+          margin: 0 auto;
+          padding: 0 24px;
+          flex: 1; /* empurra o footer para baixo */
+          width: 100%;
+        }
+
+        /* Navbar */
+        .nav {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px 0;
+        }
+        .brand {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          font-weight: 700;
+          letter-spacing: 0.3px;
+        }
+        .logo {
+          width: 36px;
+          height: 36px;
+          border-radius: 10px;
+          background: linear-gradient(135deg, var(--brand), var(--brand-2));
+          box-shadow: 0 10px 25px -10px var(--ring),
+            inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+        }
+        .nav-actions {
+          display: flex;
+          gap: 12px;
+        }
+        .link {
+          color: var(--text);
+          text-decoration: none;
+          opacity: 0.85;
+        }
+        .link:hover {
+          opacity: 1;
+          text-decoration: underline;
+        }
+
+        .btn {
+          border: 0;
+          padding: 10px 16px;
+          border-radius: 10px;
+          font-weight: 600;
+          cursor: pointer;
+          background: linear-gradient(135deg, var(--brand), var(--brand-2));
+          color: #0a0f1e;
+          box-shadow: 0 10px 25px -10px var(--ring);
+        }
+        .btn.outline {
+          background: transparent;
+          color: var(--text);
+          border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        .btn:active {
+          transform: translateY(1px);
+        }
+
+        /* Hero */
+        .hero {
+          padding: 48px 0 24px;
+          text-align: center;
+        }
+        .kicker {
+          display: inline-block;
+          font-size: 12px;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          color: var(--muted);
+          background: rgba(255, 255, 255, 0.04);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          padding: 6px 10px;
+          border-radius: 999px;
+          margin-bottom: 16px;
+        }
+        .title {
+          font-size: clamp(32px, 5vw, 52px);
+          line-height: 1.05;
+          margin: 0 0 14px;
+          letter-spacing: -0.02em;
+        }
+        .subtitle {
+          margin: 0 auto 24px;
+          max-width: 760px;
+          color: var(--muted);
+          font-size: 18px;
+          line-height: 1.6;
+        }
+        .tabnews {
+          color: var(--brand);
+          text-decoration: none;
+          font-weight: 600;
+        }
+        .tabnews:hover {
+          text-decoration: underline;
+        }
+        .cta {
+          display: flex;
+          gap: 12px;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-top: 8px;
+        }
+
+        /* Features */
+        .section {
+          padding: 32px 0;
+        }
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(12, 1fr);
+          gap: 16px;
+        }
+        .card {
+          grid-column: span 12;
+          background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.03),
+            rgba(255, 255, 255, 0.02)
+          );
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 16px;
+          padding: 20px;
+          box-shadow: 0 12px 30px -18px rgba(0, 0, 0, 0.6);
+        }
+        .card h3 {
+          margin: 0 0 8px;
+        }
+        .card p {
+          margin: 0;
+          color: var(--muted);
+          line-height: 1.6;
+        }
+        @media (min-width: 720px) {
+          .card {
+            grid-column: span 6;
+          }
+        }
+        @media (min-width: 980px) {
+          .card {
+            grid-column: span 3;
+          }
+        }
+
+        /* Code block */
+        pre {
+          background: #0a0f1e;
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          color: #d9e1ee;
+          padding: 16px;
+          border-radius: 14px;
+          overflow: auto;
+          line-height: 1.55;
+          box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+        }
+        code {
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+            "Liberation Mono", "Courier New", monospace;
+          font-size: 13.5px;
+        }
+
+        /* Footer */
+        .footer {
+          background: var(--card);
+          border-top: 1px solid rgba(255, 255, 255, 0.08);
+          color: var(--muted);
+          text-align: center;
+          font-size: 14px;
+          padding: 16px;
+        }
+      `}</style>
     </>
   );
 }
