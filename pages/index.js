@@ -127,7 +127,8 @@ function Home() {
           display: flex;
           flex-direction: column;
           min-height: 100vh;
-          background: radial-gradient(
+          background:
+            radial-gradient(
               1200px 600px at 10% -10%,
               rgba(124, 58, 237, 0.25),
               transparent 60%
@@ -139,8 +140,17 @@ function Home() {
             ),
             var(--bg);
           color: var(--text);
-          font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
-            Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji",
+          font-family:
+            ui-sans-serif,
+            system-ui,
+            -apple-system,
+            Segoe UI,
+            Roboto,
+            Ubuntu,
+            Cantarell,
+            Noto Sans,
+            Arial,
+            "Apple Color Emoji",
             "Segoe UI Emoji";
           -webkit-font-smoothing: antialiased;
           padding-bottom: 64px;
@@ -173,7 +183,8 @@ function Home() {
           height: 36px;
           border-radius: 10px;
           background: linear-gradient(135deg, var(--brand), var(--brand-2));
-          box-shadow: 0 10px 25px -10px var(--ring),
+          box-shadow:
+            0 10px 25px -10px var(--ring),
             inset 0 0 0 1px rgba(255, 255, 255, 0.15);
         }
         .nav-actions {
@@ -307,7 +318,8 @@ function Home() {
           box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
         }
         code {
-          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          font-family:
+            ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
             "Liberation Mono", "Courier New", monospace;
           font-size: 13.5px;
         }
