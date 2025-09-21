@@ -1,3 +1,5 @@
+// pages/index.js
+
 function Home() {
   return (
     <>
@@ -28,21 +30,11 @@ function Home() {
           {/* Hero */}
           <header className="hero">
             <span className="kicker">Automação residencial & IoT</span>
-            <h1 className="title">
-              Notícias, tutoriais e reviews. Tudo sobre casas inteligentes
-            </h1>
+            <h1 className="title">🛠️ Em construção...</h1>
             <p className="subtitle">
-              AutomaNews é uma plataforma colaborativa focada em automação
-              residencial e tecnologias sobre casas inteligentes. Inspirada no{" "}
-              <a
-                className="tabnews"
-                href="https://tabnews.com.br"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                TabNews
-              </a>
-              , reunimos notícias, guias, análises e discussões da comunidade.
+              Um novo local na internet para <strong>instaladores</strong> e{" "}
+              <strong>entusiastas</strong> de automação. Seu hub de conteúdos
+              que fazem a diferença <strong>de verdade</strong>.
             </p>
             <div className="cta">
               <button
@@ -88,21 +80,12 @@ function Home() {
 
           {/* Footer */}
           <footer className="footer">
-            Feito com ❤️ pela comunidade AutomaNews •{" "}
-            <a
-              className="tabnews"
-              href="https://tabnews.com.br"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              TabNews
-            </a>{" "}
-            como inspiração
+            🚧 Site em construção — em breve mais conteúdos para você!
           </footer>
         </div>
       </div>
 
-      {/* CSS global, seguro no Next.js */}
+      {/* CSS global */}
       <style jsx global>{`
         :root {
           --bg: #0b1020;
@@ -117,10 +100,18 @@ function Home() {
         * {
           box-sizing: border-box;
         }
+
+        /* remove as bordas brancas/padding do documento */
         html,
         body,
         #__next {
           height: 100%;
+          margin: 0;
+          padding: 0;
+          background: #0b1020;
+        }
+        body {
+          overflow-x: hidden;
         }
 
         .page {
@@ -153,18 +144,16 @@ function Home() {
             "Apple Color Emoji",
             "Segoe UI Emoji";
           -webkit-font-smoothing: antialiased;
-          padding-bottom: 64px;
         }
 
         .container {
           max-width: 1040px;
           margin: 0 auto;
           padding: 0 24px;
-          flex: 1; /* empurra o footer para baixo */
+          flex: 1;
           width: 100%;
         }
 
-        /* Navbar */
         .nav {
           display: flex;
           align-items: center;
@@ -191,16 +180,6 @@ function Home() {
           display: flex;
           gap: 12px;
         }
-        .link {
-          color: var(--text);
-          text-decoration: none;
-          opacity: 0.85;
-        }
-        .link:hover {
-          opacity: 1;
-          text-decoration: underline;
-        }
-
         .btn {
           border: 0;
           padding: 10px 16px;
@@ -220,7 +199,6 @@ function Home() {
           transform: translateY(1px);
         }
 
-        /* Hero */
         .hero {
           padding: 48px 0 24px;
           text-align: center;
@@ -266,7 +244,6 @@ function Home() {
           margin-top: 8px;
         }
 
-        /* Features */
         .section {
           padding: 32px 0;
         }
@@ -306,25 +283,6 @@ function Home() {
           }
         }
 
-        /* Code block */
-        pre {
-          background: #0a0f1e;
-          border: 1px solid rgba(255, 255, 255, 0.08);
-          color: #d9e1ee;
-          padding: 16px;
-          border-radius: 14px;
-          overflow: auto;
-          line-height: 1.55;
-          box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
-        }
-        code {
-          font-family:
-            ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-            "Liberation Mono", "Courier New", monospace;
-          font-size: 13.5px;
-        }
-
-        /* Footer */
         .footer {
           background: var(--card);
           border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -338,4 +296,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Home; // <- obrigatório no Pages Router
